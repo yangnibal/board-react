@@ -1,0 +1,240 @@
+$text: rgb(73, 73, 73);
+$background:rgb(242, 243, 245);
+$color: rgb(34, 76, 126);
+$subcolor: rgb(56, 85, 120);
+$back: #343a40;
+
+.login-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    .login-left-title{
+        font-size: 5rem;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 1rem;
+        margin-left: 2rem;
+        color: $subcolor;
+    }
+    .login-right-wrapper{
+        width: calc(50% - 6rem);
+        padding: 3rem;
+        background: $back;
+        height: calc(100% - 6rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login-right-title{
+            font-size: 5rem;
+            color: white;
+        }
+    }
+    .login-left-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(50% - 6rem);
+        height: calc(100% - 6rem);
+        padding: 3rem;
+        .login-content-wrapper{
+            width: 80%;
+            padding: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background: white;
+            .login-username{
+                margin: 1rem;
+                width: 100%;
+                display: flex;
+                .login-username-input{
+                    width: 100%;
+                    color: $text;
+                    outline: none;
+                    font-size: 1.3rem;
+                    padding: 0.75rem;
+                    border: 1px solid #dee2e6;
+                    border-radius: 5px;
+                }
+                .login-username-input::placeholder{
+                    font-size: 1.3rem; 
+                }
+            }
+            .login-password{
+                margin: 1rem;
+                width: 100%;
+                display: flex;
+                .login-password-input{
+                    width: 100%;
+                    color: $text;
+                    outline: none;
+                    font-size: 1.3rem;
+                    padding: 0.75rem;
+                    border:1px solid #dee2e6;
+                    border-radius: 5px;
+                }
+                .login-password-input::placeholder{
+                    font-size: 1.3rem; 
+                }
+            }
+            .login-btn{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 1rem;
+                width: 100%;
+                .login-login-btn{
+                    text-decoration: none;
+                    color: white;
+                    margin-right: 0.5rem;
+                    font-size: 1.2rem;
+                    background: $color;
+                    border-radius: 4px;
+                    padding: 0.75rem;
+                    width: 100%;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .login-signup-btn{
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 0.5rem;
+                    font-size: 1.2rem;
+                    background: $color;
+                    border-radius: 4px;
+                    padding: 0.75rem;
+                    width: 100%;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }   
+        }
+    }
+}
+
+.signup-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .signup-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        width: 30rem;
+        height: 70%;
+        .signup-title{
+            font-size: 3rem;
+            color: $text;
+            margin: 1rem;
+        }
+        .signup-name{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 226px;
+            .signup-firstname{
+                margin: 1rem;
+                margin-right: 0.5rem;
+                margin-left: 0;
+                display: flex;
+                justify-content: flex-end;
+                width: 33%;
+                .signup-firstname-input{
+                    color: $text;
+                    outline: none;
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                    border: 0.5px solid $text;
+                    background: $background;
+                    width: 100%;
+                }
+                .signup-firstname-input::placeholder{
+                    font-size: 1.2rem; 
+                    color: $text;
+                }
+            }
+            .signup-lastname{
+                margin: 1rem;
+                margin-left: 0.5rem;
+                margin-right: 0;
+                display: flex;
+                justify-content: flex-start;
+                width: 67%;
+                .signup-lastname-input{
+                    color: $text;
+                    outline: none;
+                    font-size: 1.2rem;
+                    padding: 0.5rem;
+                    border: 0.5px solid $text;
+                    background: $background;
+                    width: 100%;
+                }
+                .signup-lastname-input::placeholder{
+                    font-size: 1.2rem; 
+                    color: $text;
+                }
+            }
+        }
+        .signup-username{
+            margin: 1rem;
+            .signup-username-input{
+                color: $text;
+                outline: none;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+                border: 0.5px solid $text;
+                background: $background;
+            }
+        }
+        .signup-email{
+            margin: 1rem;
+            .signup-email-input{
+                color: $text;
+                outline: none;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+                border: 0.5px solid $text;
+                background: $background;
+            }
+        }
+        .signup-password{
+            margin: 1rem;
+            .signup-password-input{
+                color: $text;
+                outline: none;
+                font-size: 1.2rem;
+                padding: 0.5rem;
+                border: 0.5px solid $text;
+                background: $background;
+            }
+        }
+        .signup-btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 1rem;
+            .signup-signup-btn{
+                text-decoration: none;
+                color: $text;
+                margin-right: 0.5rem;
+                font-size: 1.2rem;
+            }
+            .signup-cancle-btn{
+                text-decoration: none;
+                color: $text;
+                margin-left: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

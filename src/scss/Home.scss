@@ -1,0 +1,91 @@
+$header: rgb(53, 58, 64);
+$back: rgb(243, 243, 243);
+body{
+    background: white;
+}
+
+.home-background{
+    background: rgb(242, 243, 245);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    justify-content: center;
+    align-items: center;
+    .home-name-wrapper{
+        height: 60%;
+        width: 60%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+        .home-name{
+            width: auto;
+            color: white;
+            font-size: 7rem;
+            display: flex;
+            justify-content: flex-start;
+            
+            padding: 2rem 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            border: 0.5px solid white;
+        }
+        .home-subname{
+            width: 100%;
+            color: white;
+            font-size: 1rem;
+            display: flex;
+            justify-content: flex-start;
+            margin: 3rem;
+            margin-top: 0.5rem;
+            font-weight: lighter;
+        }
+    }
+    .home-works-wrapper{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        .home-works{
+            display: flex;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: $header;
+        }
+        .icon-down{
+            margin-top: 1rem;
+            color: $header;
+            font-size: 2rem;
+            margin-bottom: 4rem;
+        }
+    }
+}
+.home-contents{
+    height: auto;
+    width: 100vw;
+    background: $back;
+    .contents-blogs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 4rem;
+        .contents-blogs-title{
+            color: rgb(73, 73, 73);
+            font-weight: bold;
+            font-size: 2rem;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        .home-post-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}
